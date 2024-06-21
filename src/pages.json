@@ -1,0 +1,79 @@
+{
+	"easycom": {
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+	        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "艺起测"
+			}
+		},
+		{
+			"path": "pages/statistics/index",
+			"style": {
+				"navigationBarTitleText": "学习情况"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages/pages_home",
+			"pages": [
+        {
+				  "path": "selectBook/index"
+			  },
+        {
+				  "path": "answerQuestions/index",
+          "style": {
+            "navigationBarTitleText": "今日新题"
+          }
+			  }
+      ]
+		}
+	],
+  "tabBar": {
+    "custom": true,
+    "color": "#333333",
+    "selectedColor": "#4094ff",
+    "backgroundColor": "#f9f9f9",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        // "iconPath": "static/img/tab/home.png",
+        // "selectedIconPath": "static/img/tab/home_on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/statistics/index",
+        // "iconPath": "static/img/tab/my.png",
+        // "selectedIconPath": "static/img/tab/my_on.png",
+        "text": "统计"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        // "iconPath": "static/img/tab/my.png",
+        // "selectedIconPath": "static/img/tab/my_on.png",
+        "text": "我的"
+      }
+    ]
+  },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+    "navigationBarTitleText": "红旗智能",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
