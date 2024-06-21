@@ -8,7 +8,7 @@
         "env": {
           "ENV_TYPE": "dev",
           "UNI_PLATFORM": "mp-weixin",
-          "VUE_APP_BASE_URL": "https://hqzn.cloud:333"
+          "VUE_APP_BASE_URL": "https://baidu.com"
         }
       },
       "pro": {
@@ -16,7 +16,7 @@
         "env": {
           "ENV_TYPE": "pro",
           "UNI_PLATFORM": "mp-weixin",
-          "VUE_APP_BASE_URL": "https://www.hongqizn.com"
+          "VUE_APP_BASE_URL": "https://baidu.com"
         }
       },
       "test": {
@@ -24,7 +24,7 @@
         "env": {
           "ENV_TYPE": "test",
           "UNI_PLATFORM": "mp-weixin",
-          "VUE_APP_BASE_URL": "https://hqzn.cloud:334"
+          "VUE_APP_BASE_URL": "https://baidu.com"
         }
       }
     }
