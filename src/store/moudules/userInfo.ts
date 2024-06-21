@@ -4,9 +4,19 @@ import { defineStore } from 'pinia';
 export const useUserInfoStore = defineStore(
   'useUserInfoStore',
   () => {
-    const someState = ref('你好 pinia')
+    const userInfo = ref({
+      name: '张三',
+      token: ''
+    })
+
+    // 更新用户信息
+    const updateUserInfo = (newUserInfo: any) => {
+      userInfo.value = newUserInfo
+    }
+    
     return { 
-      someState,
+      userInfo,
+      updateUserInfo
     }
   },
   {
